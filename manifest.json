@@ -1,0 +1,18 @@
+{
+  "name": "Reviewing Now!",
+  "description": "Githubのレビュー中に、うっかり'Submit review'の押し忘れを防ぐChrome拡張機能です。",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
